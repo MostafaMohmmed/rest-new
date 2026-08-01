@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar"  dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طيف | للمأكولات العالمية </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+     <header class="main-header">
+
+        <div class="logo" id="logo-text">طيف 
+            <span>Taif</span>
+            </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox"> 
+            <label for="menu-toggle"  class="nav-res">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+
+            <nav class="nav-links">
+
+                <a href="#hero">الرئيسية</a>
+
+                    <a href="#menu">القائمة العالمية</a>
+
+                                                <a href="#order">حجز طاولة</a>
+
+            </nav>
+
+
+         <div class="header-actions">
+  <button id="theme-toggle" class="theme-toggle-btn">☀️ الوضع الفاتح</button>
+  
+  <button id="cart-btn" class="cart-btn" onclick="toggleCart()">
+    🛒 السلة <span id="cart-count">0</span>
+  </button>
+</div>   
+            </header>
+
+
+        <main class="main-content">
+
+        <section id="hero" class="hero-section">
+
+            <div class="hero-content">
+
+                <h2 class="subtitle">
+                    تجربة تذوق استثنائية
+                </h2>
+
+                <h1  id="main-title" class="title">
+                    فن الطهي الحديث
+                </h1>
+
+                <p>
+                    مزيج ساحر بين المكونات الطازجة واللامحدود
+                </p>
+                <a href=""  class="btn-serch">
+                    اكتشف أطباقنا
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+    <aside class="promo-widget">
+       
+            <div class="promo-slider">
+                <div class="promo-slide">
+                    <img id="taif-restaurant-img" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=300&q=80" alt="عرض 1">
+                    <div class="promo-details">
+                        <h4>مشاوي مشكلة</h4>
+                        <div class="promo-price">
+                            
+                            <del>45$</del> 
+                            <span>30$</span></div>
+
+                            <button class="add-to-cart-btn">اطلب الان</button>
+
+
+                    </div>
+                </div>
+                <div class="promo-slide">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80" alt="عرض 2">
+                    <div class="promo-details">
+                        <h4>برجر واغيو فاخر</h4>
+                        <div class="promo-price"><del>25$</del> <span>18$</span></div>
+                                                    <button class="add-to-cart-btn">اطلب الان</button>
+
+                    </div>
+                </div>
+                <div class="promo-slide">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=300&q=80" alt="عرض 3">
+                    <div class="promo-details">
+                        <h4>بيتزا الكمأة</h4>
+                        <div class="promo-price"><del>35$</del> <span>25$</span></div>
+                                                    <button class="add-to-cart-btn">اطلب الان</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="promo-tag">🔥 عروض حصرية</div>
+        </aside>
+
+
+
+
+
+
+
+        
+
+        <section id="menu" class="menu-section">
+            <div class="section-header">
+                <h2>أطباق الشيف المميزة</h2>
+                <p>اخترنا لكم اشهى الاطباق المحضرة بعناية فائقة </p>
+
+            </div>
+
+
+           
+<div class="menu-controls">
+  <div class="search-box">
+    <input type="text" id="menu-search" placeholder=" ابحث عن طبقك المفضل...">
+  </div>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">الكل</button>
+    <button class="filter-btn" data-category="main">وجبات رئيسية</button>
+    <button class="filter-btn" data-category="drinks">مشروبات</button>
+  </div>
+</div>
+
+
+
+             <div class="grid-container">
+
+    <article class="food-card" data-category="main">
+        <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="ستيك الفاخر">
+        </div>
+        <div class="card-info">
+            <h3>ستيك الفاخر</h3>
+            <p>لحم بقر أسترالي فاخر مع زبدة الكمأة والأعشاب</p>
+            <span class="price">120$</span>
+
+            <button class="add-to-cart-btn">🛒 إضافة للسلة</button>
+        </div>
+    </article>
+
+    <!-- الطبق الثاني: وجبة رئيسية -->
+    <article class="food-card" data-category="main">
+        <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=500&q=80" alt="سالمون مشوي">
+        </div>
+        <div class="card-info">
+            <h3>سالمون نرويجي مشوي</h3>
+            <p>شريحة سالمون طازجة مع صوص الليمون والأعشاب</p>
+            <span class="price">85$</span>
+            <button class="add-to-cart-btn">🛒 إضافة للسلة</button>
+        </div>
+    </article>
+
+    <!-- الطبق الثالث: مشروب / حلويات -->
+    <article class="food-card" data-category="drinks">
+        <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="عصير طيف">
+        </div>
+        <div class="card-info">
+            <h3>كوكتيل طيف الاستوائي</h3>
+            <p>مزيج من الفواكه الطازجة مع لمسة النعناع</p>
+            <span class="price">15$</span>
+            <button class="add-to-cart-btn">🛒 إضافة للسلة</button>
+        </div>
+    </article>
+
+</div>
+         
+
+
+    
+
+        </section >
+
+
+
+        <section class="video-section">
+
+            <div class="section-header">
+                <h2>أجواء مطعم طيف</h2>
+
+            </div>
+
+            <div class="video-container">
+                <video src="" controls  poster="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80">
+
+                </video>
+
+            </div>
+
+
+
+        </section>
+
+
+
+              <section id="booking" class="booking-section">
+            <div class="form-container">
+                <h2>احجز طاولتك الآن</h2>
+                <form class="master-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" " value="علي ">
+                            <label for="name">الاسم الكريم</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="phone" required placeholder=" ">
+                            <label for="phone">رقم التواصل</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group"><input type="date" id="date" required></div>
+                        <div class="input-group">
+                            <select id="guests" required>
+                                <option value="" disabled selected>عدد الضيوف</option>
+                                <option value="2">شخصين</option>
+                                <option value="4">عائلة (4 أشخاص)</option>
+                                <option value="6">مجموعة كبيرة</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-liquid">تأكيد الحجز</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115989.10260273766!2d46.604753!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2s!4v1700000000000!5m2!1sar!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        
+       </main>
+
+      <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">طـيـف <span>Taif</span></div>
+                <p class="footer-desc">نقدم لكم تجربة تذوق فاخرة تجمع بين الأصالة والابتكار في عالم الطهي، لتصنع ذكريات لا تُنسى.</p>
+            </div>
+            <div class="footer-col">
+                <h3>تواصل معنا</h3>
+                <ul class="contact-info">
+                    <li>📍 الرياض، المملكة العربية السعودية</li>
+                    <li>📞 +966 50 123 4567</li>
+                    <li>✉️ info@taif-restaurant.com</li>
+                </ul>
+            </div>
+            <div class="footer-col" >
+                <h3>تابعنا على</h3>
+                <div class="social-links">
+                    <a href="#">📘 فيسبوك</a>
+                  <a href="#">  <img src="images/instagram.png" alt="Twitter" class="social-icon">إنستغرام</a>
+                    <a href="#">🐦 تويتر</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 مطعم طيف العالمي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+
+    <aside id="cart-drawer" class="cart-drawer">
+        <div class="cartheader">
+        <h3>سلة الطلبات </h3>
+        <button class="close-cart" onclick="toggleCart()">
+            ✕
+ 
+        </button>
+</div>
+
+<div id="cart-items" class="cart-body">
+
+</div>
+
+<div class="cart-footer">
+    <div class="total-price">
+        <span> الاجمالي  : </span>
+        <strong id="cart-total">
+            $0.00
+        </strong>
+    </div>
+    
+
+</div>
+
+
+    </aside>
+
+
+
+
+
+    
+
+<script src="js/main.js"></script>
+
+      
+
+</body>
+
+</html>
